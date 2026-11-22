@@ -36,3 +36,10 @@ Add original project images or demos after permission/disclosure review, and dev
 ## Archival GIF demonstrations
 
 RoMan, Good Cherrybot, ReBiS and Swayat GIFs are temporarily loaded from the author's older public portfolio at `kamatajinkya2.github.io/images/` and have their original project captions. Their source filenames were checked against the old portfolio's `_config.yml` and asset paths in its GitHub repository. This avoids duplicating potentially large animation files in the new repo while the layout is reviewed. For long-term durability, migrate/optimize the assets to this repository or a controlled media host in a separate change; do not rely indefinitely on cross-site media. GIF playback is automatic, so prefer accessible still/poster alternatives or MP4/WebM for a final media-heavy version.
+
+## Public resume and LinkedIn
+
+- LinkedIn: `https://www.linkedin.com/in/ajinkya-kamat/` (matching the original portfolio and externally verified FieldAI profile).
+- `resume.html` reproduces the **released** `resume.tex` from the separate private resume repository as a public, print-friendly HTML document. The source repository itself stays private.
+- Visitors can open the resume and use **Print / Save as PDF** to create an A4 PDF on their devices. This is **not** a pre-generated or directly downloadable PDF file. If a fixed PDF download is desired, publish an approved PDF as `resume.pdf` in this public repository and update the CTA after checking the file.
+- Updates to `resume.tex` in the private repository must be synchronized manually to `resume.html` until an intentional publication pipeline is established.
