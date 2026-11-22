@@ -11,3 +11,19 @@
 @media(max-width:850px){.shell{width:min(100% - 42px,720px)}.nav-shell{height:72px}nav{gap:14px}.nav-contact{display:none}.hero{padding-top:70px}.hero h1{margin:32px 0 46px}.hero-bottom{gap:35px}.section{padding-top:90px}.section-heading{grid-template-columns:1fr;gap:20px}.section-heading>p:last-child{grid-column:auto}.feature-content{padding-left:0}.leadership-grid{gap:35px}.section-about{padding:85px 0}}
 @media(max-width:620px){.shell{width:calc(100% - 34px)}.nav-shell{height:65px;gap:10px}.wordmark{font-size:23px}nav{gap:12px}nav a{font-size:11px}.hero h1{font-size:clamp(76px,19vw,115px)}.hero-bottom,.work-grid,.research-item,.leadership-grid,.about-grid{grid-template-columns:1fr}.hero-bottom{padding-bottom:42px}.hero-aside{grid-template-columns:auto 1fr;column-gap:18px}.spacer-label{margin:0}.hero-rule{font-size:10px}.feature-card{padding:26px 24px}.metrics{grid-template-columns:1fr;gap:20px}.metrics div{flex-direction:row;align-items:baseline;gap:18px}.metrics strong{min-width:135px}.work-card{min-height:320px}.work-card h3{margin-top:35px}.research-item{gap:13px}.research-meta{gap:15px}.section-contrast{padding-bottom:90px}.section-about{margin-top:70px}.leadership-numbers{padding:24px}.leadership-numbers strong{font-size:44px}.contact-section{padding:90px 0}.site-footer .shell{padding:24px 0}.site-footer span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Commercial engineering project evidence */
+.commercial-visual{margin:24px 0 20px;background:#eef0ea;overflow:hidden}
+.commercial-visual img{display:block;width:100%;object-fit:contain}
+.commercial-visual figcaption{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:12px 16px;font-size:12px;font-weight:650;letter-spacing:.02em}
+.commercial-visual figcaption a{white-space:nowrap;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.commercial-visual figcaption a:hover{opacity:.75}
+.commercial-visual-feature{background:#233b32;border:1px solid #506859;margin-top:31px}
+.commercial-visual-feature img{max-height:350px;object-fit:cover;object-position:center}
+.commercial-visual-feature figcaption{background:#233b32;color:#e1eee0}
+.commercial-visual-card{background:#f0f2ec;border:1px solid var(--line);margin:20px 0}
+.commercial-visual-card img{height:228px;object-fit:contain;padding:8px}
+.commercial-visual-card figcaption{color:var(--green);background:#eef1e9}
+.work-card .commercial-visual + p{margin-top:7px}
+@media(max-width:620px){.commercial-visual-feature img{max-height:250px}.commercial-visual-card img{height:220px}}
