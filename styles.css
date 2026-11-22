@@ -27,3 +27,17 @@
 .commercial-visual-card figcaption{color:var(--green);background:#eef1e9}
 .work-card .commercial-visual + p{margin-top:7px}
 @media(max-width:620px){.commercial-visual-feature img{max-height:250px}.commercial-visual-card img{height:220px}}
+
+
+/* Give major professional projects distinct hierarchy */
+.systemantics-showcase{margin-top:22px;background:var(--paper);border:1px solid var(--line);padding:34px}
+.systemantics-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:44px;align-items:center;margin-top:14px}
+.systemantics-copy h3{font:normal clamp(32px,3.6vw,48px)/1.13 var(--serif);letter-spacing:-.04em;margin:0 0 20px}
+.systemantics-copy p{font-size:17px;color:var(--muted);margin:0 0 32px}
+.systemantics-copy .card-footer{justify-content:flex-start;gap:20px}
+.systemantics-showcase .commercial-visual{margin:0}
+.systemantics-showcase .commercial-visual-card img{height:310px}
+.early-work{border-top:1px solid #bfc6b9;margin-top:30px;padding-top:18px}
+.early-work .kicker{font-size:12px;margin:0 0 9px}
+.early-work p:last-child{font-size:15px;line-height:1.65;margin-bottom:0}
+@media(max-width:700px){.systemantics-showcase{padding:24px}.systemantics-columns{grid-template-columns:1fr;gap:22px}.systemantics-showcase .commercial-visual-card img{height:245px}}
