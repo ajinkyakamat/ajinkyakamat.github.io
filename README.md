@@ -32,3 +32,7 @@ Add original project images or demos after permission/disclosure review, and dev
 - `index.html` — page structure and content
 - `styles.css` — responsive editorial design
 - `.nojekyll` — static GitHub Pages passthrough
+
+## Archival GIF demonstrations
+
+RoMan, Good Cherrybot, ReBiS and Swayat GIFs are temporarily loaded from the author's older public portfolio at `kamatajinkya2.github.io/images/` and have their original project captions. Their source filenames were checked against the old portfolio's `_config.yml` and asset paths in its GitHub repository. This avoids duplicating potentially large animation files in the new repo while the layout is reviewed. For long-term durability, migrate/optimize the assets to this repository or a controlled media host in a separate change; do not rely indefinitely on cross-site media. GIF playback is automatic, so prefer accessible still/poster alternatives or MP4/WebM for a final media-heavy version.
