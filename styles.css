@@ -58,3 +58,14 @@
 .media-grid .media-frame img{height:225px}
 @media(max-width:700px){.ivlabs-media-heading{display:block}.ivlabs-media-heading p{margin-top:10px}.media-grid{grid-template-columns:1fr 1fr}.media-grid .media-frame:last-child{grid-column:1/-1}.media-duo{grid-template-columns:1fr}.media-frame img{height:230px}}
 @media(max-width:420px){.media-grid{grid-template-columns:1fr}.media-grid .media-frame:last-child{grid-column:auto}}
+
+
+/* Professional profile and resume access */
+.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 42px}
+.hero-links a{padding:11px 19px;border:1px solid var(--green);border-radius:3px;text-decoration:none;color:var(--green);font-size:13px;font-weight:700}
+.hero-links a:first-child{background:var(--green);color:white}
+.hero-links a:hover{background:#dfe9de;color:var(--dark)}
+.hero-links a:first-child:hover{background:var(--dark);color:white}
+.contact-links{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;font-size:14px;font-weight:700;color:var(--green)}
+.contact-links a{text-decoration:none;border-bottom:1px solid #8ba995;padding-bottom:5px}
+@media(max-width:620px){.hero-links{margin-bottom:30px}.hero-links a{padding:9px 14px}nav{gap:9px}nav a{font-size:10px}}
