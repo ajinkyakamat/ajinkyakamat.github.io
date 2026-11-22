@@ -32,5 +32,11 @@
  .resume-paper li{margin:1pt 0}
  .resume-paper ul{margin:3pt 0 5pt;padding-left:16pt}
  .resume-paper a{color:inherit!important}
- .resume-paper section,.resume-role{break-inside:avoid-page}
+ /* Let long sections such as Professional Experience flow across pages.
+    Keeping the entire section together previously created an almost empty first page. */
+ .resume-paper section{break-inside:auto;page-break-inside:auto}
+ .resume-paper section h2{break-after:avoid-page;page-break-after:avoid}
+ .resume-paper .resume-role{break-inside:avoid-page;page-break-inside:avoid}
+ .resume-paper li{break-inside:avoid-page}
+ .resume-paper{orphans:3;widows:3}
 }
