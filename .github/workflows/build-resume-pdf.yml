@@ -6,6 +6,11 @@ on:
     paths:
       - resume.tex
       - .github/workflows/build-resume-pdf.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - resume.tex
+      - .github/workflows/build-resume-pdf.yml
   workflow_dispatch:
 
 permissions:
@@ -18,7 +23,7 @@ jobs:
       - name: Check out the feature branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Compile released resume with LuaLaTeX
         uses: xu-cheng/latex-action@v4
@@ -36,6 +41,7 @@ jobs:
           fi
 
       - name: Commit public PDF to the feature branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/feat/commercial-project-media'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
