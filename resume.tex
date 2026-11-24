@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=17mm]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{needspace}
+
+\setmainfont{Latin Modern Roman}
+\hypersetup{colorlinks=true,urlcolor=black}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*,nosep,topsep=2pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+\newcommand{\role}[3]{%
+  \Needspace{6\baselineskip}%
+  \textbf{#1}\hfill #3\\
+  \textit{#2}\par
+}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[c]{0.52\textwidth}
+  {\fontsize{24}{27}\selectfont\bfseries Ajinkya Kamat}\par
+
+\end{minipage}%
+\begin{minipage}[c]{0.48\textwidth}
+  \raggedleft\small
+  Mumbai, India\par
+  \href{mailto:kamat.ajinkya@gmail.com}{kamat.ajinkya@gmail.com}\par
+  \href{https://ajinkyakamat.github.io}{ajinkyakamat.github.io}
+\end{minipage}
+
+\section*{Profile}
+Electrical engineer and roboticist with 10+ years of experience delivering
+robotic systems from electronics and motor drives through embedded firmware,
+real-time control, integration and field deployment. Technical lead in
+cross-disciplinary engineering, field reliability and research-to-system integration.
+
+\section*{Professional Experience}
+
+\role{FieldAI}{Electrical and Firmware Lead}{Feb 2024 -- Present}
+\begin{itemize}
+  \item Lead electrical and firmware development of Falcon and Ferrite
+  autonomy payloads, integrating LiDAR, depth sensors, onboard compute
+  and power systems for mobile-robot deployment.
+  \item Helped scale deployed robotic systems from approximately 3 to
+  100+ through payload redesign, system integration and validation.
+  \item Extended reported payload mean time between failures from about
+  3 days to 2 months through field-failure analysis and electronics
+  and firmware redesign.
+  \item Reduced payload iteration cycles from approximately 3 months to
+  1 month by introducing structured engineering workflows.
+  \item Coordinate design, validation and deployment across distributed
+  engineering teams in India and the United States.
+\end{itemize}
+
+\role{Carnegie Mellon University, Biorobotics Lab}{Graduate Student Researcher}{Oct 2021 -- Dec 2023}
+\begin{itemize}
+  \item Integrated ROS and MoveIt across three lab robots by developing
+  control nodes, drivers, robot descriptions and motion-planning packages;
+  maintained Docker environments and MuJoCo simulation for reproducible
+  research across the lab.
+  \item Implemented distributed CANopen actuator control, enabling
+  coordinated motion on a novel 6-DOF direct-drive Delta manipulator.
+  \item Developed a custom direct-drive gripper with a directionally compliant
+  controller, enabling grasps of low-profile objects such as flat-lying phones.
+  \item Applied Demons deformable image registration to estimate screw
+  locations after smartphone deformation for robotic disassembly.
+\end{itemize}
+
+\role{Systemantics India Pvt. Ltd.}{Robotics Systems Engineering}{2020 -- 2021}
+\begin{itemize}
+  \item Modernized the industrial robot system controller by evaluating
+  ARMv8 hardware and developing a modular ROS 2 software architecture.
+  \item Achieved reported sub-10\,$\mu$s control latency by optimizing
+  PREEMPT\_RT Linux; established Git, Docker and apt-based deployment workflows.
+\end{itemize}
+
+\role{University of Washington, Personal Robotics Lab}{Visiting Scientist, RCTA Program}{Apr 2018 -- May 2020}
+\begin{itemize}
+  \item Delivered the capstone unstructured manipulation demonstration
+  for RoMan's decade-long, seven-institution research program by
+  integrating its research software packages and developing hand--eye
+  calibration for perception-guided debris clearing.
+  \item Built experimental data-collection infrastructure for a
+  chopstick telemanipulation study, supporting research published at IROS 2020.
+\end{itemize}
+
+\newpage
+
+\role{Systemantics India Pvt. Ltd.}{Robotics Electronics and Firmware Engineering}{2014 -- 2018}
+\begin{itemize}
+  \item Led a three-engineer electronics team in end-to-end development
+  of controllers and firmware for parallel and articulated industrial robots.
+  \item Reduced the cost of a 1.2\,kW three-phase brushless motor driver
+  by approximately 30\% through electrical redesign; developed
+  FreeRTOS-based dual-motor-controller firmware.
+  \item Developed DSP-based joint-space and task-space motion control
+  for coordinated operation of industrial manipulators.
+  \item Reduced harmonic-drive-induced robot vibrations by approximately
+  50\% through transmission-error diagnosis and control improvements.
+\end{itemize}
+
+\role{AVL}{Engineering Intern}{May 2013 -- Jul 2013}
+\begin{itemize}
+  \item Replaced hardware PLC-based closed-loop temperature, fluid and
+  coolant control on engine test beds with NI LabVIEW software on Windows CE;
+  AVL subsequently offered the solution as a commercial add-on.
+\end{itemize}
+
+\section*{Leadership — IvLabs, VNIT}
+\textit{Co-founder and Technical Mentor \hfill 2013 -- Present}
+\begin{itemize}
+  \item Co-founded a student-led robotics research lab that has grown
+  to 80+ members, with 35+ research papers and 5+ patent filings produced
+  by successive cohorts.
+  \item Originated research directions, formed project teams and mentored
+  students through Swayat, Sahayak, ReQuBiS, OSMOS and prosthetic-hand projects.
+  \item Led ReBiS research; established the Swayat team, built its first
+  biped prototype and mentored the second-generation humanoid.
+\end{itemize}
+
+\section*{Technical Skills}
+\textbf{Electronics and controls:} Circuit and PCB design, power electronics,
+motor drives, control systems, hardware bring-up, instrumentation,
+failure analysis\\
+\textbf{Embedded and robotics:} C, C++, Python, FreeRTOS, CANopen,
+PREEMPT\_RT Linux, ROS, ROS 2, MoveIt, motor and motion control\\
+\textbf{Engineering tools:} KiCad, OrCAD, SPICE, MATLAB, Git, Docker,
+NI LabVIEW, Linux
+
+\section*{Selected Research Publications}
+Co-author: ReBiS (IROS 2014); \textit{Telemanipulation with Chopsticks}
+(IROS 2020); \textit{Toward Fieldable Human-Scale Mobile Manipulation
+Using RoMan} (SPIE 2020).
+
+\section*{Education}
+\textbf{Visvesvaraya National Institute of Technology (VNIT), Nagpur}\\
+B.Tech., Electronics and Communication Engineering, May 2014
+
+\end{document}
