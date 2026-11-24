@@ -33,14 +33,16 @@ jobs:
 
       - name: Verify the PDF
         run: |
-          python3 - <<'PY'
-          import re
+          python3 -m venv /tmp/resume-check
+          /tmp/resume-check/bin/pip install --quiet pypdf
+          /tmp/resume-check/bin/python - <<'PY'
           from pathlib import Path
-          pdf = Path("resume.pdf").read_bytes()
-          assert pdf.startswith(b"%PDF-"), "Not a PDF"
-          page_count = len(re.findall(rb"/Type\s*/Page\b", pdf))
-          assert page_count == 2, f"Expected exactly 2 PDF pages, found {page_count}"
-          print(f"Verified {page_count}-page PDF ({len(pdf)} bytes)")
+          from pypdf import PdfReader
+          path = Path("resume.pdf")
+          assert path.is_file() and path.stat().st_size > 0, "PDF was not generated"
+          page_count = len(PdfReader(path).pages)
+          assert page_count == 2, f"Expected exactly two PDF pages, found {page_count}"
+          print(f"Verified two-page PDF ({path.stat().st_size} bytes)")
           PY
 
       - name: Commit public PDF to the feature branch
