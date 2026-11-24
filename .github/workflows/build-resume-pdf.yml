@@ -38,7 +38,7 @@ jobs:
           from pathlib import Path
           pdf = Path("resume.pdf").read_bytes()
           assert pdf.startswith(b"%PDF-"), "Not a PDF"
-          page_count = len(re.findall(rb"/Type\\s*/Page\\b", pdf))
+          page_count = len(re.findall(rb"/Type\s*/Page\b", pdf))
           assert page_count == 2, f"Expected exactly 2 PDF pages, found {page_count}"
           print(f"Verified {page_count}-page PDF ({len(pdf)} bytes)")
           PY
