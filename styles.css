@@ -11,3 +11,61 @@
 @media(max-width:850px){.shell{width:min(100% - 42px,720px)}.nav-shell{height:72px}nav{gap:14px}.nav-contact{display:none}.hero{padding-top:70px}.hero h1{margin:32px 0 46px}.hero-bottom{gap:35px}.section{padding-top:90px}.section-heading{grid-template-columns:1fr;gap:20px}.section-heading>p:last-child{grid-column:auto}.feature-content{padding-left:0}.leadership-grid{gap:35px}.section-about{padding:85px 0}}
 @media(max-width:620px){.shell{width:calc(100% - 34px)}.nav-shell{height:65px;gap:10px}.wordmark{font-size:23px}nav{gap:12px}nav a{font-size:11px}.hero h1{font-size:clamp(76px,19vw,115px)}.hero-bottom,.work-grid,.research-item,.leadership-grid,.about-grid{grid-template-columns:1fr}.hero-bottom{padding-bottom:42px}.hero-aside{grid-template-columns:auto 1fr;column-gap:18px}.spacer-label{margin:0}.hero-rule{font-size:10px}.feature-card{padding:26px 24px}.metrics{grid-template-columns:1fr;gap:20px}.metrics div{flex-direction:row;align-items:baseline;gap:18px}.metrics strong{min-width:135px}.work-card{min-height:320px}.work-card h3{margin-top:35px}.research-item{gap:13px}.research-meta{gap:15px}.section-contrast{padding-bottom:90px}.section-about{margin-top:70px}.leadership-numbers{padding:24px}.leadership-numbers strong{font-size:44px}.contact-section{padding:90px 0}.site-footer .shell{padding:24px 0}.site-footer span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Commercial engineering project evidence */
+.commercial-visual{margin:24px 0 20px;background:#eef0ea;overflow:hidden}
+.commercial-visual img{display:block;width:100%;object-fit:contain}
+.commercial-visual figcaption{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:12px 16px;font-size:12px;font-weight:650;letter-spacing:.02em}
+.commercial-visual figcaption a{white-space:nowrap;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.commercial-visual figcaption a:hover{opacity:.75}
+.commercial-visual-feature{background:#233b32;border:1px solid #506859;margin-top:31px}
+.commercial-visual-feature img{max-height:350px;object-fit:cover;object-position:center}
+.commercial-visual-feature figcaption{background:#233b32;color:#e1eee0}
+.commercial-visual-card{background:#f0f2ec;border:1px solid var(--line);margin:20px 0}
+.commercial-visual-card img{height:228px;object-fit:contain;padding:8px}
+.commercial-visual-card figcaption{color:var(--green);background:#eef1e9}
+.work-card .commercial-visual + p{margin-top:7px}
+@media(max-width:620px){.commercial-visual-feature img{max-height:250px}.commercial-visual-card img{height:220px}}
+
+
+/* Give major professional projects distinct hierarchy */
+.systemantics-showcase{margin-top:22px;background:var(--paper);border:1px solid var(--line);padding:34px}
+.systemantics-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:44px;align-items:center;margin-top:14px}
+.systemantics-copy h3{font:normal clamp(32px,3.6vw,48px)/1.13 var(--serif);letter-spacing:-.04em;margin:0 0 20px}
+.systemantics-copy p{font-size:17px;color:var(--muted);margin:0 0 32px}
+.systemantics-copy .card-footer{justify-content:flex-start;gap:20px}
+.systemantics-showcase .commercial-visual{margin:0}
+.systemantics-showcase .commercial-visual-card img{height:310px}
+.early-work{border-top:1px solid #bfc6b9;margin-top:30px;padding-top:18px}
+.early-work .kicker{font-size:12px;margin:0 0 9px}
+.early-work p:last-child{font-size:15px;line-height:1.65;margin-bottom:0}
+@media(max-width:700px){.systemantics-showcase{padding:24px}.systemantics-columns{grid-template-columns:1fr;gap:22px}.systemantics-showcase .commercial-visual-card img{height:245px}}
+
+/* Archival moving-image demonstrations */
+.research-media{margin-top:24px;margin-bottom:20px}
+.media-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.media-frame{margin:0;background:#f8f9f4;border:1px solid #c5cec5;overflow:hidden}
+.media-frame img{width:100%;height:200px;object-fit:contain;display:block;background:#ecefe8}
+.media-frame figcaption{font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#506557;padding:10px 12px}
+.media-single{max-width:480px}
+.media-single img{height:245px}
+.ivlabs-media{margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
+.ivlabs-media-heading{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:19px}
+.ivlabs-media-heading h3{font:normal 30px/1.2 var(--serif);margin:0;letter-spacing:-.03em}
+.ivlabs-media-heading p{font-size:13px;color:var(--muted);margin:0;max-width:450px}
+.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.media-grid .media-frame img{height:225px}
+@media(max-width:700px){.ivlabs-media-heading{display:block}.ivlabs-media-heading p{margin-top:10px}.media-grid{grid-template-columns:1fr 1fr}.media-grid .media-frame:last-child{grid-column:1/-1}.media-duo{grid-template-columns:1fr}.media-frame img{height:230px}}
+@media(max-width:420px){.media-grid{grid-template-columns:1fr}.media-grid .media-frame:last-child{grid-column:auto}}
+
+
+/* Professional profile and resume access */
+.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 42px}
+.hero-links a{padding:11px 19px;border:1px solid var(--green);border-radius:3px;text-decoration:none;color:var(--green);font-size:13px;font-weight:700}
+.hero-links a:first-child{background:var(--green);color:white}
+.hero-links a:hover{background:#dfe9de;color:var(--dark)}
+.hero-links a:first-child:hover{background:var(--dark);color:white}
+.contact-links{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;font-size:14px;font-weight:700;color:var(--green)}
+.contact-links a{text-decoration:none;border-bottom:1px solid #8ba995;padding-bottom:5px}
+@media(max-width:620px){.hero-links{margin-bottom:30px}.hero-links a{padding:9px 14px}nav{gap:9px}nav a{font-size:10px}}

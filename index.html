@@ -18,6 +18,7 @@
         <a href="#research">Research</a>
         <a href="#leadership">Leadership</a>
         <a href="#about">About</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
       </nav>
       <a class="nav-contact" href="mailto:kamat.ajinkya@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
     </div>
@@ -36,6 +37,7 @@
           <span>Electrical & Firmware Lead at FieldAI</span>
         </div>
       </div>
+      <div class="hero-links" aria-label="Professional profiles"><a href="resume.pdf" download="Ajinkya_Kamat_Resume.pdf">Download resume PDF <span aria-hidden="true">↓</span></a><a href="https://www.linkedin.com/in/ajinkya-kamat/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
       <div class="hero-rule"><span>01 / Engineering in practice</span><a href="#work">Explore selected work ↓</a></div>
     </section>
 
@@ -47,29 +49,33 @@
         <div class="feature-content">
           <h3>Field-ready robotic autonomy</h3>
           <p>Leading electrical and firmware engineering for autonomy payloads on mobile robots, integrating sensing, compute, power, and embedded interfaces. Work spans integration, validation, reliability improvements, and deployment at scale.</p>
+          <figure class="commercial-visual commercial-visual-feature">
+            <img src="https://kamatajinkya2.github.io/images/fai.jpg" alt="FieldAI robotic autonomy payload pictured in the original public portfolio" loading="lazy" decoding="async">
+            <figcaption><span>Autonomy hardware in the field</span><a href="https://www.youtube.com/watch?v=R_tNFC0VPqo" target="_blank" rel="noopener noreferrer" aria-label="Watch public FieldAI demonstration on YouTube">Watch public demo <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
           <div class="metrics" aria-label="Selected outcomes">
             <div><strong>100+</strong><span>fielded systems, from ~3 initially</span></div>
-            <div><strong>~3 days → 2 months</strong><span>reported payload mean time between failures</span></div>
+            <div><strong>3 days → 2 months</strong><span>reported payload mean time between failures</span></div>
             <div><strong>3 → 1 month</strong><span>development iteration cycle</span></div>
           </div>
           <p class="fine-print">Approximate figures from prior project reporting; presented as engineering outcomes rather than claims of sole authorship.</p>
         </div>
       </article>
 
-      <div class="work-grid">
-        <article class="work-card">
-          <div class="card-top"><span class="index">02</span><span class="meta">Systemantics · 2014–2018, 2020–2021</span></div>
-          <h3>Industrial robot electronics & control</h3>
-          <p>End-to-end engineering of industrial robotic systems—from motor drives and embedded controllers to DSP motion control, ARMv8 system-controller modernization, and ROS 2 integration.</p>
-          <div class="card-footer"><span>1.2 kW BLDC motor drive</span><span>Real-time Linux · FreeRTOS</span></div>
-        </article>
-        <article class="work-card">
-          <div class="card-top"><span class="index">03</span><span class="meta">AVL · 2013</span></div>
-          <h3>Closed-loop engine test-bed control</h3>
-          <p>Reimplemented PLC-based temperature, fluid, and coolant control in NI LabVIEW on Windows CE devices. The end-to-end internship deliverable became an optional commercial offering for AVL test beds.</p>
-          <div class="card-footer"><span>Industrial automation</span><span>Commercialized add-on</span></div>
-        </article>
-      </div>
+      <article class="systemantics-showcase">
+        <div class="card-top"><span class="index">02</span><span class="meta">Systemantics · 2014–2018, 2020–2021</span></div>
+        <div class="systemantics-columns">
+          <div class="systemantics-copy">
+            <h3>Industrial robot electronics & control</h3>
+            <p>End-to-end engineering of industrial robotic systems—from motor drives and embedded controllers to DSP motion control, ARMv8 system-controller modernization, and ROS 2 integration.</p>
+            <div class="card-footer"><span>1.2 kW BLDC motor drive</span><span>Real-time Linux · FreeRTOS</span></div>
+          </div>
+          <figure class="commercial-visual commercial-visual-card">
+            <img src="https://kamatajinkya2.github.io/images/asystr-3C.png" alt="Systemantics ASYSTR industrial collaborative robot from the original public portfolio" loading="lazy" decoding="async">
+            <figcaption><span>ASYSTR collaborative robot</span><a href="https://www.youtube.com/watch?v=ti-P3bKMcXs" target="_blank" rel="noopener noreferrer" aria-label="Watch public Systemantics robot demonstration on YouTube">Watch demo <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+        </div>
+      </article>
     </section>
 
     <section class="section section-contrast" id="research" aria-labelledby="research-title">
@@ -81,6 +87,10 @@
             <div>
               <h3>RoMan — capstone in unstructured manipulation</h3>
               <p>Delivered the capstone debris-clearing demonstration for a decade-long research program involving seven universities and institutes. Integrated its research software packages and developed hand–eye calibration for perception-guided manipulation.</p>
+              <div class="research-media media-duo" aria-label="RoMan demonstrations">
+                <figure class="media-frame"><img src="https://kamatajinkya2.github.io/images/roman-irl.gif" alt="RoMan robot carrying out a debris manipulation demonstration" loading="lazy" decoding="async"><figcaption>RoMan · physical robot</figcaption></figure>
+                <figure class="media-frame"><img src="https://kamatajinkya2.github.io/images/roman-sim.gif" alt="RoMan debris manipulation in simulation" loading="lazy" decoding="async"><figcaption>RoMan · simulation</figcaption></figure>
+              </div>
               <a class="text-link" href="https://personalrobotics-files.cs.washington.edu/kessens2020roman.pdf" target="_blank" rel="noopener noreferrer">Read the RoMan paper <span aria-hidden="true">↗</span></a>
             </div>
           </article>
@@ -97,6 +107,7 @@
             <div>
               <h3>Telemanipulation with chopsticks</h3>
               <p>Built experimental data-collection infrastructure for a study investigating manipulation demonstrations and human factors in teleoperation.</p>
+              <figure class="media-frame research-media media-single"><img src="https://kamatajinkya2.github.io/images/cherrybot.gif" alt="Chopsticks-equipped robotic arm demonstrating manipulation" loading="lazy" decoding="async"><figcaption>Good Cherrybot · telemanipulation research</figcaption></figure>
               <a class="text-link" href="https://arxiv.org/pdf/2008.00101" target="_blank" rel="noopener noreferrer">Read the research paper <span aria-hidden="true">↗</span></a>
             </div>
           </article>
@@ -120,6 +131,15 @@
           <p>IvLabs-wide figures reported by the lab, representing the work of many cohorts and collaborators.</p>
         </div>
       </div>
+      <div class="ivlabs-media" aria-label="IvLabs robotics demonstrations">
+        <div class="ivlabs-media-heading"><h3>From ReBiS to Swayat</h3><p>Original project demonstrations from my earlier portfolio. ReBiS was my own research project; I built the initial Swayat biped and mentored its later development.</p></div>
+        <div class="media-grid">
+          <figure class="media-frame"><img src="https://kamatajinkya2.github.io/images/rebis-walking.gif" alt="ReBiS reconfigurable snake robot walking in bipedal configuration" loading="lazy" decoding="async"><figcaption>ReBiS · bipedal walking</figcaption></figure>
+          <figure class="media-frame"><img src="https://kamatajinkya2.github.io/images/rebis-reconfig.gif" alt="ReBiS transitioning between robot configurations" loading="lazy" decoding="async"><figcaption>ReBiS · reconfiguration</figcaption></figure>
+          <figure class="media-frame"><img src="https://kamatajinkya2.github.io/images/swayat.gif" alt="Swayat humanoid robotic project demonstration" loading="lazy" decoding="async"><figcaption>Swayat · humanoid project</figcaption></figure>
+        </div>
+      </div>
+
     </section>
 
     <section class="section section-about" id="about" aria-labelledby="about-title">
@@ -128,6 +148,10 @@
         <div class="about-copy">
           <p>I'm an electrical engineer and roboticist. I enjoy work that crosses boundaries: circuit design, firmware, controls, Linux software, mechanics, and the realities of putting hardware into the field.</p>
           <p>I earned a B.Tech. from Visvesvaraya National Institute of Technology, Nagpur, in 2014. My research and engineering work has included the University of Washington Personal Robotics Lab, Carnegie Mellon University's Biorobotics Lab, and industrial robotics teams.</p>
+          <div class="early-work">
+            <p class="kicker">Early engineering · AVL, 2013</p>
+            <p>During my internship, I replaced PLC-based closed-loop temperature, fluid, and coolant control for engine test beds with NI LabVIEW software running on Windows CE. AVL subsequently offered the solution as a commercial add-on.</p>
+          </div>
           <div class="tag-list" aria-label="Engineering interests">
             <span>Electronics</span><span>Embedded C/C++</span><span>Motor control</span><span>ROS / MoveIt</span><span>Systems integration</span><span>Reliability</span>
           </div>
@@ -139,6 +163,7 @@
       <p class="kicker">Contact</p>
       <h2 id="contact-title">Have a difficult<br>engineering problem?</h2>
       <a class="email-link" href="mailto:kamat.ajinkya@gmail.com">kamat.ajinkya@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-links"><a href="https://www.linkedin.com/in/ajinkya-kamat/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="resume.pdf" download="Ajinkya_Kamat_Resume.pdf">Download resume ↓</a></div>
     </section>
   </main>
 
