@@ -25,12 +25,13 @@ The repo is intended for `https://ajinkyakamat.github.io/`. Review the `feat/por
 
 ## Next iterations
 
-Add original project images or demos after permission/disclosure review, and develop project case studies for RoMan, ReBiS, Swayat, and CMU grasping. A public resume PDF can be added as a separate deliberate release.
+Develop project case studies for RoMan, ReBiS, Swayat, and CMU grasping after permission/disclosure review. Maintain the published resume PDF using the approved private LaTeX source.
 
 ## Files
 
 - `index.html` — page structure and content
 - `styles.css` — responsive editorial design
+- `resume.pdf` — approved two-page PDF for public download, built from the private LaTeX resume
 - `.nojekyll` — static GitHub Pages passthrough
 
 ## Archival GIF demonstrations
@@ -39,7 +40,7 @@ RoMan, Good Cherrybot, ReBiS and Swayat GIFs are temporarily loaded from the aut
 
 ## Public resume and LinkedIn
 
-- LinkedIn: `https://www.linkedin.com/in/ajinkya-kamat/` (matching the original portfolio and externally verified FieldAI profile).
-- `resume.html` reproduces the **released** `resume.tex` from the separate private resume repository as a public, print-friendly HTML document. The source repository itself stays private.
-- Visitors can open the resume and use **Print / Save as PDF** to create an A4 PDF on their devices. This is **not** a pre-generated or directly downloadable PDF file. If a fixed PDF download is desired, publish an approved PDF as `resume.pdf` in this public repository and update the CTA after checking the file.
-- Updates to `resume.tex` in the private repository must be synchronized manually to `resume.html` until an intentional publication pipeline is established.
+- LinkedIn: `https://www.linkedin.com/in/ajinkya-kamat/` from the author's original public portfolio.
+- `resume.pdf` is the approved two-page LuaLaTeX PDF compiled from `resume.tex` at the private `ajinkyakamat/resume` repository `main` branch (release version at initial publication). Its CI build confirmed two pages with a PDF parser.
+- Visitors can download the PDF directly from the portfolio. The public site deliberately does **not** maintain an independent HTML resume or public LaTeX source file.
+- When the private resume changes, regenerate `resume.pdf` from the approved release and replace the public PDF through a feature branch and PR. Do not publish the private master career archive.
